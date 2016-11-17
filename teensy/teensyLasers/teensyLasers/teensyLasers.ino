@@ -10,10 +10,9 @@
   2016-09-01
 */
 
-int bluePin = 29; // FTM2 on 3.6 - for 3.2 use 25
+int bluePin = 25;  // FTM2
 int greenPin = 23; // FTM0
-int redPin = 3;   // FTM1
-int irPin = 35;   // FTM3 on Teensy 3.6 - comment this line for 3.2 only
+int redPin = 3;    // FTM1
 int vPin = 4;
 int i;
 char inChar[10];
@@ -22,10 +21,9 @@ String inCharStr;
 void setup() {
   Serial.begin(9600);
   analogWriteResolution(12); // provides better resolution on duty cycle
-  setupPin(bluePin, 1367, 4095);
-  setupPin(greenPin, 1373, 4095);
-  setupPin(redPin, 1369, 4095);
-  setupPin(irPin, 1371, 4095);  // comment this line for Teensy 3.6
+  setupPin(bluePin, 1368, 4095);
+  setupPin(greenPin, 1372, 4095);
+  setupPin(redPin, 1370, 4095);
   pinMode(vPin, OUTPUT);
 }
 
@@ -41,7 +39,6 @@ void loop()
   if (inCharStr.startsWith("b.")) setFreq(inCharStr, bluePin);
   if (inCharStr.startsWith("g.")) setFreq(inCharStr, greenPin);
   if (inCharStr.startsWith("r.")) setFreq(inCharStr, redPin);
-  if (inCharStr.startsWith("i.")) setFreq(inCharStr, irPin);
   if (inCharStr.startsWith("s.")) sweep(inCharStr, bluePin);
   if (inCharStr.startsWith("v.")) vSwitch(inCharStr, vPin);
 
