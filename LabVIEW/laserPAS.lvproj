@@ -10,9 +10,17 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="absCalcPlot.vi" Type="VI" URL="../sub/absCalcPlot.vi"/>
+		<Item Name="fftGetMagsPoly.vi" Type="VI" URL="../sub/fftGetMagsPoly.vi"/>
+		<Item Name="micUnbundle.vi" Type="VI" URL="../sub/micUnbundle.vi"/>
+		<Item Name="micUnbundle_III.vi" Type="VI" URL="../sub/micUnbundle_III.vi"/>
 		<Item Name="MultiPAS-III.vi" Type="VI" URL="../MultiPAS-III.vi"/>
+		<Item Name="pdNormalize.vi" Type="VI" URL="../sub/pdNormalize.vi"/>
+		<Item Name="pdNormalize_III.vi" Type="VI" URL="../sub/pdNormalize_III.vi"/>
+		<Item Name="rollingAverage_multi.vi" Type="VI" URL="../sub/rollingAverage_multi.vi"/>
 		<Item Name="saveGenerateName.vi" Type="VI" URL="../sub/saveGenerateName.vi"/>
 		<Item Name="saveSetDirectory.vi" Type="VI" URL="../sub/saveSetDirectory.vi"/>
+		<Item Name="saveTimeSeries.vi" Type="VI" URL="../sub/saveTimeSeries.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="SoundHandle.ctl" Type="VI" URL="/&lt;userlib&gt;/WaveIO.llb/SoundHandle.ctl"/>
@@ -77,9 +85,11 @@
 				<Item Name="Write To Spreadsheet File (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write To Spreadsheet File (string).vi"/>
 				<Item Name="Write To Spreadsheet File.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write To Spreadsheet File.vi"/>
 			</Item>
-			<Item Name="absCalcPlot.vi" Type="VI" URL="../sub/absCalcPlot.vi"/>
+			<Item Name="absCalcPlot_III.vi" Type="VI" URL="../sub/absCalcPlot_III.vi"/>
+			<Item Name="absCalcPlot_IV.vi" Type="VI" URL="../sub/absCalcPlot_IV.vi"/>
 			<Item Name="fftGenX.vi" Type="VI" URL="../sub/fftGenX.vi"/>
 			<Item Name="fftGetMags.vi" Type="VI" URL="../sub/fftGetMags.vi"/>
+			<Item Name="fftGetMags_IV.vi" Type="VI" URL="../sub/fftGetMags_IV.vi"/>
 			<Item Name="fftGetMax.vi" Type="VI" URL="../sub/fftGetMax.vi"/>
 			<Item Name="filterCreateMsg.vi" Type="VI" URL="../sub/filterCreateMsg.vi"/>
 			<Item Name="freqSet.vi" Type="VI" URL="../sub/freqSet.vi"/>
@@ -90,6 +100,8 @@
 			<Item Name="laserOnOff.vi" Type="VI" URL="../sub/laserOnOff.vi"/>
 			<Item Name="laserSetPower.vi" Type="VI" URL="../sub/laserSetPower.vi"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2011/resource/lvanlys.dll"/>
+			<Item Name="micUnbundle_IV.vi" Type="VI" URL="../sub/micUnbundle_IV.vi"/>
+			<Item Name="pdNormalize_IV.vi" Type="VI" URL="../sub/pdNormalize_IV.vi"/>
 			<Item Name="QMH Add Message to Queue (Array).vi" Type="VI" URL="../sub/QMH/QMH Add Message to Queue (Array).vi"/>
 			<Item Name="QMH Add Message to Queue (Single Element).vi" Type="VI" URL="../sub/QMH/QMH Add Message to Queue (Single Element).vi"/>
 			<Item Name="QMH Add Message to Queue.vi" Type="VI" URL="../sub/QMH/QMH Add Message to Queue.vi"/>
@@ -98,9 +110,11 @@
 			<Item Name="QMH Get Next Message from Queue.vi" Type="VI" URL="../sub/QMH/QMH Get Next Message from Queue.vi"/>
 			<Item Name="resCalc.vi" Type="VI" URL="../sub/resCalc.vi"/>
 			<Item Name="rollingAverage.vi" Type="VI" URL="../sub/rollingAverage.vi"/>
-			<Item Name="rollingAverage_3wave.vi" Type="VI" URL="../sub/rollingAverage_3wave.vi"/>
+			<Item Name="rollingAverage_III.vi" Type="VI" URL="../sub/rollingAverage_III.vi"/>
+			<Item Name="rollingAverage_IV.vi" Type="VI" URL="../sub/rollingAverage_IV.vi"/>
 			<Item Name="saveFreqSweep.vi" Type="VI" URL="../sub/saveFreqSweep.vi"/>
-			<Item Name="saveTimeSeries.vi" Type="VI" URL="../sub/saveTimeSeries.vi"/>
+			<Item Name="saveTimeSeries_III.vi" Type="VI" URL="../sub/saveTimeSeries_III.vi"/>
+			<Item Name="saveTimeSeries_IV.vi" Type="VI" URL="../sub/saveTimeSeries_IV.vi"/>
 			<Item Name="saveUniqueName.vi" Type="VI" URL="../sub/saveUniqueName.vi"/>
 			<Item Name="teensySweepFreq.vi" Type="VI" URL="../sub/teensySweepFreq.vi"/>
 		</Item>
