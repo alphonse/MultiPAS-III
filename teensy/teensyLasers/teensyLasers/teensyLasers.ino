@@ -10,9 +10,9 @@
   2016-09-01
 */
 
-int bluePin = 25;  // FTM2
-int greenPin = 23; // FTM0
-int redPin = 3;    // FTM1
+int bluePin = 3;  // FTM2
+int greenPin = 25; // FTM0
+int redPin = 23;    // FTM1
 
 int vPin = 4;
 int i;
