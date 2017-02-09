@@ -93,7 +93,7 @@
 			<Item Name="fftGetMax.vi" Type="VI" URL="../sub/fftGetMax.vi"/>
 			<Item Name="filterCreateMsg.vi" Type="VI" URL="../sub/filterCreateMsg.vi"/>
 			<Item Name="freqSet.vi" Type="VI" URL="../sub/freqSet.vi"/>
-			<Item Name="laserDiagnose.vi" Type="VI" URL="../sub/laserDiagnose.vi"/>
+			<Item Name="laserDiagnose_III.vi" Type="VI" URL="../sub/laserDiagnose_III.vi"/>
 			<Item Name="laserGetCurrent.vi" Type="VI" URL="../sub/laserGetCurrent.vi"/>
 			<Item Name="laserGetPower.vi" Type="VI" URL="../sub/laserGetPower.vi"/>
 			<Item Name="laserGetTemp.vi" Type="VI" URL="../sub/laserGetTemp.vi"/>

@@ -10,6 +10,7 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="absCalcPlot_IV.vi" Type="VI" URL="../sub/absCalcPlot_IV.vi"/>
 		<Item Name="crdCalcExtinction.vi" Type="VI" URL="../crd/sub/crdCalcExtinction.vi"/>
 		<Item Name="icon.ico" Type="Document" URL="../../icon.ico"/>
 		<Item Name="laserDiagnose.vi" Type="VI" URL="../sub/laserDiagnose.vi"/>
@@ -85,7 +86,6 @@
 			</Item>
 			<Item Name="absCalcPlot.vi" Type="VI" URL="../sub/absCalcPlot.vi"/>
 			<Item Name="absCalcPlot_III.vi" Type="VI" URL="../sub/absCalcPlot_III.vi"/>
-			<Item Name="absCalcPlot_IV.vi" Type="VI" URL="../sub/absCalcPlot_IV.vi"/>
 			<Item Name="crd_acquireWaveform.vi" Type="VI" URL="../../../../GitHub/MultiPAS-IV/LabVIEW/crd/sub/crd_acquireWaveform.vi"/>
 			<Item Name="crd_fitTau.vi" Type="VI" URL="../../../../GitHub/MultiPAS-IV/LabVIEW/crd/sub/crd_fitTau.vi"/>
 			<Item Name="crd_processWaveform.vi" Type="VI" URL="../../../../GitHub/MultiPAS-IV/LabVIEW/crd/sub/crd_processWaveform.vi"/>
@@ -217,6 +217,120 @@
 				<Property Name="TgtF_productName" Type="Str">MultiPAS-III</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{7A654BEB-C473-4620-80D0-3C0AA369F478}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">MultiPAS-III.exe</Property>
+			</Item>
+			<Item Name="MultiPAS-IV" Type="EXE">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{45E9ADF0-4BF1-4212-BA22-BAD5172F61B6}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{71C046CA-FF1C-4376-9C82-7657259E1639}</Property>
+				<Property Name="App_winsec.description" Type="Str">http://www.Microsoft.com</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{9B47DC04-F173-4CCE-AAB0-5DD007D52756}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">MultiPAS-IV</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/MultiPAS-IV</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{68573869-9833-42BD-8F60-BCA00AD749B2}</Property>
+				<Property Name="Destination[0].destName" Type="Str">MultiPAS_IV.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/MultiPAS-IV/MultiPAS_IV.exe</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/MultiPAS-IV/data</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/icon.ico</Property>
+				<Property Name="Source[0].itemID" Type="Str">{5B215697-7421-4DAE-84A5-58F4307C86F2}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/MultiPAS-IV.vi</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
+				<Property Name="TgtF_companyName" Type="Str">University of Georgia</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">MultiPAS-IV</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">1</Property>
+				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
+				<Property Name="TgtF_internalName" Type="Str">MultiPAS-IV</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2017 Al Fischer | Smith Lab | UGA</Property>
+				<Property Name="TgtF_productName" Type="Str">MultiPAS-IV</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{9D3996C7-7A59-4F95-B04E-209FFF18F7E2}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">MultiPAS_IV.exe</Property>
+			</Item>
+			<Item Name="MultiPAS-IV-2" Type="EXE">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{3C78D70F-7FC5-498E-B10C-E798C6C10C50}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{73DF12B4-DC20-463A-BA4F-B03BE5153BF3}</Property>
+				<Property Name="App_winsec.description" Type="Str">http://www.Microsoft.com</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{F7C854E2-49EE-4E45-9D61-9B1665B0A96E}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">MultiPAS-IV-2</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/MultiPAS-IV-2</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{2D869145-A05C-44EA-89C1-C657D47A6B8C}</Property>
+				<Property Name="Destination[0].destName" Type="Str">MultiPAS-IV.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/MultiPAS-IV-2/MultiPAS-IV.exe</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/MultiPAS-IV-2/data</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/icon.ico</Property>
+				<Property Name="Source[0].itemID" Type="Str">{8C15E1DF-F6F3-4A88-90F9-DB7D621F71D4}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/MultiPAS-IV.vi</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
+				<Property Name="TgtF_companyName" Type="Str">University of Georgia</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">MultiPAS-IV-2</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">1</Property>
+				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
+				<Property Name="TgtF_internalName" Type="Str">MultiPAS-IV-2</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2017 Al Fischer | Smith Lab | UGA</Property>
+				<Property Name="TgtF_productName" Type="Str">MultiPAS-IV</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{7B399939-DD5D-462C-B099-764164DE3376}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">MultiPAS-IV.exe</Property>
+			</Item>
+			<Item Name="MultiPAS-IV2" Type="EXE">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{9BBB60D5-CAFD-4BC5-974C-E8ABB37FDCA3}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{51D8A9E5-DF99-49B8-9DB5-739A45302320}</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{39BF6D3A-5BA0-44A2-85AE-627F7A8AE0FD}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">MultiPAS-IV2</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/MultiPAS-IV2</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{5E3FA225-C1BA-416D-9D8B-FF2330B5F100}</Property>
+				<Property Name="Destination[0].destName" Type="Str">MultiPAS-IV.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/MultiPAS-IV2/MultiPAS-IV.exe</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/MultiPAS-IV2/data</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/icon.ico</Property>
+				<Property Name="Source[0].itemID" Type="Str">{86012F3E-1AB5-4D47-8505-A601B03282DF}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/MultiPAS-IV.vi</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="TgtF_companyName" Type="Str">University of Georgia</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">MultiPAS-IV2</Property>
+				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
+				<Property Name="TgtF_internalName" Type="Str">MultiPAS-IV2</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2017 Al Fischer | Smith Lab | UGA</Property>
+				<Property Name="TgtF_productName" Type="Str">MultiPAS-IV2</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{9CC628E0-6676-47A2-9553-258CE3527DF8}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">MultiPAS-IV.exe</Property>
 			</Item>
 		</Item>
 	</Item>
